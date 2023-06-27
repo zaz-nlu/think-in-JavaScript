@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>deep clone</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+           const _ = require('lodash');
+
+            let user = {
+                         name: "John",
+                         sizes: {
+                            height: 182,
+                            width: 50
+                        }
+            };
+
+            let clone = _.cloneDeep(user);
+
+            alert(user.sizes === clone.sizes); // false，不再是同一个对象
+
+           
+            
+        </script>
+    </body>
+</html>
