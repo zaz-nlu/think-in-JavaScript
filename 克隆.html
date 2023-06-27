@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>对象属性求和</title>
+    </head>
+    <body>
+        <script>
+           let user={
+            name:"Jhon",
+            age:"24"
+           };
+           let clone={};
+           for(let key in user){
+                clone[key]=user[key];
+           }
+           alert(clone.name);
+           alert(clone.age);
+           clone.name="Liu";
+           alert(user.name);
+           alert(clone.name);
+
+        </script>
+    </body>
+</html>

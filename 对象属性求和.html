@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>对象属性求和</title>
+    </head>
+    <body>
+        <script>
+            let salaries={
+                John:100,
+                Ann:160,
+                Pete:130
+            }
+            let sum=0;
+            for(let key in salaries){
+                sum+=salaries[key];//遍历对象中的每个key，之后将他加到sum中
+            }
+            alert(sum);
+
+        </script>
+    </body>
+</html>

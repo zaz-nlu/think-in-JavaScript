@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>this</title>
+    </head>
+    <body>
+        <script>
+        let user={
+            name:"Liu",
+            age:24,
+            sayHi(){
+                alert(user.name);
+            }
+        };
+        let admin=user;
+        user=null;
+        admin.sayHi();
+        
+
+        </script>
+    </body>
+</html>
